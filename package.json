@@ -1,0 +1,19 @@
+{
+  "name": "llm-eval-suite",
+  "version": "0.1.0",
+  "description": "A small, real LLM-as-judge evaluation harness: groundedness scoring plus a position-bias detector for the judge itself.",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "pretest": "tsc",
+    "test": "node --test dist/test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
