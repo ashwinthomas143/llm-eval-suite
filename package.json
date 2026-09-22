@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "pretest": "tsc",
-    "test": "node --test dist/test"
+    "test": "node --test dist/test/groundedness.test.js dist/test/position-bias.test.js"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",

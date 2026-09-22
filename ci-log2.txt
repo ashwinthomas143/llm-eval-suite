@@ -1,0 +1,236 @@
+﻿2026-09-22T20:45:40.2546729Z Current runner version: '2.337.0'
+2026-09-22T20:45:40.2572482Z ##[group]Runner Image Provisioner
+2026-09-22T20:45:40.2574003Z Hosted Compute Agent
+2026-09-22T20:45:40.2574675Z Version: 20260828.587
+2026-09-22T20:45:40.2575367Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-22T20:45:40.2576132Z Build Date: 2026-08-28T16:44:25Z
+2026-09-22T20:45:40.2576837Z Worker ID: {6cf74335-f86c-4514-95be-fd14042ee5ea}
+2026-09-22T20:45:40.2577602Z Azure Region: eastus
+2026-09-22T20:45:40.2578204Z ##[endgroup]
+2026-09-22T20:45:40.2579943Z ##[group]Operating System
+2026-09-22T20:45:40.2580699Z Ubuntu
+2026-09-22T20:45:40.2581228Z 24.04.5
+2026-09-22T20:45:40.2581827Z LTS
+2026-09-22T20:45:40.2582389Z ##[endgroup]
+2026-09-22T20:45:40.2582933Z ##[group]Runner Image
+2026-09-22T20:45:40.2583829Z Image: ubuntu-24.04
+2026-09-22T20:45:40.2584409Z Version: 20260907.300.1
+2026-09-22T20:45:40.2585787Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+2026-09-22T20:45:40.2587417Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+2026-09-22T20:45:40.2588446Z ##[endgroup]
+2026-09-22T20:45:40.2590004Z ##[group]GITHUB_TOKEN Permissions
+2026-09-22T20:45:40.2592190Z Contents: read
+2026-09-22T20:45:40.2592862Z Metadata: read
+2026-09-22T20:45:40.2593913Z Packages: read
+2026-09-22T20:45:40.2594501Z ##[endgroup]
+2026-09-22T20:45:40.2596554Z Secret source: Actions
+2026-09-22T20:45:40.2597675Z Cache mode: write
+2026-09-22T20:45:40.2598411Z Prepare workflow directory
+2026-09-22T20:45:40.2922782Z Prepare all required actions
+2026-09-22T20:45:40.2970493Z Getting action download info
+2026-09-22T20:45:40.5227720Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-22T20:45:40.6360141Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-09-22T20:45:40.8280569Z Complete job name: test
+2026-09-22T20:45:40.9041408Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-22T20:45:40.9050336Z ##[group]Run actions/checkout@v4
+2026-09-22T20:45:40.9051082Z with:
+2026-09-22T20:45:40.9051568Z   repository: ashwinthomas143/llm-eval-suite
+2026-09-22T20:45:40.9055511Z   token: ***
+2026-09-22T20:45:40.9055968Z   ssh-strict: true
+2026-09-22T20:45:40.9056402Z   ssh-user: git
+2026-09-22T20:45:40.9056855Z   persist-credentials: true
+2026-09-22T20:45:40.9057334Z   clean: true
+2026-09-22T20:45:40.9057774Z   sparse-checkout-cone-mode: true
+2026-09-22T20:45:40.9058314Z   fetch-depth: 1
+2026-09-22T20:45:40.9058754Z   fetch-tags: false
+2026-09-22T20:45:40.9059200Z   show-progress: true
+2026-09-22T20:45:40.9059646Z   lfs: false
+2026-09-22T20:45:40.9060095Z   submodules: false
+2026-09-22T20:45:40.9060553Z   set-safe-directory: true
+2026-09-22T20:45:40.9061062Z   allow-unsafe-pr-checkout: false
+2026-09-22T20:45:40.9061841Z ##[endgroup]
+2026-09-22T20:45:41.0060319Z Syncing repository: ashwinthomas143/llm-eval-suite
+2026-09-22T20:45:41.0063071Z ##[group]Getting Git version info
+2026-09-22T20:45:41.0064718Z Working directory is '/home/runner/work/llm-eval-suite/llm-eval-suite'
+2026-09-22T20:45:41.0066653Z [command]/usr/bin/git version
+2026-09-22T20:45:41.0136468Z git version 2.55.0
+2026-09-22T20:45:41.0165549Z ##[endgroup]
+2026-09-22T20:45:41.0187240Z Temporarily overriding HOME='/home/runner/work/_temp/32e37c24-68a6-426c-8f3e-91d32803cf76' before making global git config changes
+2026-09-22T20:45:41.0189654Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-22T20:45:41.0192470Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/llm-eval-suite/llm-eval-suite
+2026-09-22T20:45:41.0247846Z Deleting the contents of '/home/runner/work/llm-eval-suite/llm-eval-suite'
+2026-09-22T20:45:41.0251998Z ##[group]Initializing the repository
+2026-09-22T20:45:41.0256138Z [command]/usr/bin/git init /home/runner/work/llm-eval-suite/llm-eval-suite
+2026-09-22T20:45:41.0363614Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-22T20:45:41.0365979Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-22T20:45:41.0368079Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-22T20:45:41.0369919Z hint: call:
+2026-09-22T20:45:41.0371128Z hint:
+2026-09-22T20:45:41.0372427Z hint: 	git config --global init.defaultBranch <name>
+2026-09-22T20:45:41.0374030Z hint:
+2026-09-22T20:45:41.0375224Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-22T20:45:41.0377021Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-22T20:45:41.0378468Z hint:
+2026-09-22T20:45:41.0380128Z hint: 	git branch -m <name>
+2026-09-22T20:45:41.0381252Z hint:
+2026-09-22T20:45:41.0382533Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-22T20:45:41.0384868Z Initialized empty Git repository in /home/runner/work/llm-eval-suite/llm-eval-suite/.git/
+2026-09-22T20:45:41.0388648Z [command]/usr/bin/git remote add origin https://github.com/ashwinthomas143/llm-eval-suite
+2026-09-22T20:45:41.0432056Z ##[endgroup]
+2026-09-22T20:45:41.0433643Z ##[group]Disabling automatic garbage collection
+2026-09-22T20:45:41.0437471Z [command]/usr/bin/git config --local gc.auto 0
+2026-09-22T20:45:41.0470812Z ##[endgroup]
+2026-09-22T20:45:41.0472227Z ##[group]Setting up auth
+2026-09-22T20:45:41.0479003Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-22T20:45:41.0512251Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-22T20:45:41.0917032Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-22T20:45:41.0958055Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-22T20:45:41.1184680Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-22T20:45:41.1221953Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-22T20:45:41.1446392Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-22T20:45:41.1487115Z ##[endgroup]
+2026-09-22T20:45:41.1488678Z ##[group]Fetching the repository
+2026-09-22T20:45:41.1499019Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +624b0bd69cc385104bbe378952d6315f90f04554:refs/remotes/origin/main
+2026-09-22T20:45:41.3848629Z From https://github.com/ashwinthomas143/llm-eval-suite
+2026-09-22T20:45:41.3849701Z  * [new ref]         624b0bd69cc385104bbe378952d6315f90f04554 -> origin/main
+2026-09-22T20:45:41.3853738Z ##[endgroup]
+2026-09-22T20:45:41.3854692Z ##[group]Determining the checkout info
+2026-09-22T20:45:41.3856610Z ##[endgroup]
+2026-09-22T20:45:41.3862457Z [command]/usr/bin/git sparse-checkout disable
+2026-09-22T20:45:41.3915443Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-22T20:45:41.3945877Z ##[group]Checking out the ref
+2026-09-22T20:45:41.3958962Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-22T20:45:41.4020356Z Switched to a new branch 'main'
+2026-09-22T20:45:41.4026753Z branch 'main' set up to track 'origin/main'.
+2026-09-22T20:45:41.4031903Z ##[endgroup]
+2026-09-22T20:45:41.4075014Z [command]/usr/bin/git log -1 --format=%H
+2026-09-22T20:45:41.4103469Z 624b0bd69cc385104bbe378952d6315f90f04554
+2026-09-22T20:45:41.4380441Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-22T20:45:41.4383673Z ##[group]Run actions/setup-node@v4
+2026-09-22T20:45:41.4384233Z with:
+2026-09-22T20:45:41.4384652Z   node-version: 22
+2026-09-22T20:45:41.4385099Z   cache: npm
+2026-09-22T20:45:41.4385527Z   always-auth: false
+2026-09-22T20:45:41.4385993Z   check-latest: false
+2026-09-22T20:45:41.4389540Z   token: ***
+2026-09-22T20:45:41.4389962Z ##[endgroup]
+2026-09-22T20:45:41.5804271Z Found in cache @ /opt/hostedtoolcache/node/22.23.2/x64
+2026-09-22T20:45:41.5807806Z (node:2309) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-09-22T20:45:41.5809433Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-22T20:45:41.5811462Z ##[group]Environment details
+2026-09-22T20:45:41.9829330Z node: v22.23.2
+2026-09-22T20:45:41.9830225Z npm: 10.9.8
+2026-09-22T20:45:41.9830867Z yarn: 1.22.22
+2026-09-22T20:45:41.9832381Z ##[endgroup]
+2026-09-22T20:45:41.9871775Z [command]/opt/hostedtoolcache/node/22.23.2/x64/bin/npm config get cache
+2026-09-22T20:45:42.0978824Z /home/runner/.npm
+2026-09-22T20:45:42.1661172Z npm cache is not found
+2026-09-22T20:45:42.1862106Z ##[group]Run npm ci
+2026-09-22T20:45:42.1862668Z [36;1mnpm ci[0m
+2026-09-22T20:45:42.1982932Z shell: /usr/bin/bash -e {0}
+2026-09-22T20:45:42.1983901Z ##[endgroup]
+2026-09-22T20:45:43.2384422Z 
+2026-09-22T20:45:43.2393051Z added 3 packages, and audited 4 packages in 984ms
+2026-09-22T20:45:43.2395639Z 
+2026-09-22T20:45:43.2396034Z found 0 vulnerabilities
+2026-09-22T20:45:43.2831175Z ##[group]Run npx tsc --listEmittedFiles
+2026-09-22T20:45:43.2831627Z [36;1mnpx tsc --listEmittedFiles[0m
+2026-09-22T20:45:43.2869892Z shell: /usr/bin/bash -e {0}
+2026-09-22T20:45:43.2870236Z ##[endgroup]
+2026-09-22T20:45:44.3727597Z TSFILE: /home/runner/work/llm-eval-suite/llm-eval-suite/dist/src/types.js
+2026-09-22T20:45:44.3742893Z TSFILE: /home/runner/work/llm-eval-suite/llm-eval-suite/dist/src/judge.js
+2026-09-22T20:45:44.3746281Z TSFILE: /home/runner/work/llm-eval-suite/llm-eval-suite/dist/src/position-bias.js
+2026-09-22T20:45:44.3754997Z TSFILE: /home/runner/work/llm-eval-suite/llm-eval-suite/dist/test/groundedness.test.js
+2026-09-22T20:45:44.3756430Z TSFILE: /home/runner/work/llm-eval-suite/llm-eval-suite/dist/test/position-bias.test.js
+2026-09-22T20:45:44.4010491Z ##[group]Run ls -la dist/ dist/src/ dist/test/ 2>&1 || true
+2026-09-22T20:45:44.4010974Z [36;1mls -la dist/ dist/src/ dist/test/ 2>&1 || true[0m
+2026-09-22T20:45:44.4048694Z shell: /usr/bin/bash -e {0}
+2026-09-22T20:45:44.4048975Z ##[endgroup]
+2026-09-22T20:45:44.4118510Z dist/:
+2026-09-22T20:45:44.4119083Z total 16
+2026-09-22T20:45:44.4119718Z drwxr-xr-x 4 runner runner 4096 Sep 22 20:45 .
+2026-09-22T20:45:44.4120607Z drwxr-xr-x 8 runner runner 4096 Sep 22 20:45 ..
+2026-09-22T20:45:44.4121458Z drwxr-xr-x 2 runner runner 4096 Sep 22 20:45 src
+2026-09-22T20:45:44.4122464Z drwxr-xr-x 2 runner runner 4096 Sep 22 20:45 test
+2026-09-22T20:45:44.4122891Z 
+2026-09-22T20:45:44.4123075Z dist/src/:
+2026-09-22T20:45:44.4123719Z total 20
+2026-09-22T20:45:44.4124239Z drwxr-xr-x 2 runner runner 4096 Sep 22 20:45 .
+2026-09-22T20:45:44.4124927Z drwxr-xr-x 4 runner runner 4096 Sep 22 20:45 ..
+2026-09-22T20:45:44.4125663Z -rw-r--r-- 1 runner runner 3665 Sep 22 20:45 judge.js
+2026-09-22T20:45:44.4126485Z -rw-r--r-- 1 runner runner 1681 Sep 22 20:45 position-bias.js
+2026-09-22T20:45:44.4127004Z -rw-r--r-- 1 runner runner   77 Sep 22 20:45 types.js
+2026-09-22T20:45:44.4127250Z 
+2026-09-22T20:45:44.4127346Z dist/test/:
+2026-09-22T20:45:44.4127574Z total 20
+2026-09-22T20:45:44.4127879Z drwxr-xr-x 2 runner runner 4096 Sep 22 20:45 .
+2026-09-22T20:45:44.4128280Z drwxr-xr-x 4 runner runner 4096 Sep 22 20:45 ..
+2026-09-22T20:45:44.4129017Z -rw-r--r-- 1 runner runner 4241 Sep 22 20:45 groundedness.test.js
+2026-09-22T20:45:44.4129588Z -rw-r--r-- 1 runner runner 2373 Sep 22 20:45 position-bias.test.js
+2026-09-22T20:45:44.4153905Z ##[group]Run npm test
+2026-09-22T20:45:44.4154199Z [36;1mnpm test[0m
+2026-09-22T20:45:44.4185916Z shell: /usr/bin/bash -e {0}
+2026-09-22T20:45:44.4186182Z ##[endgroup]
+2026-09-22T20:45:44.5193299Z 
+2026-09-22T20:45:44.5194599Z > llm-eval-suite@0.1.0 pretest
+2026-09-22T20:45:44.5195083Z > tsc
+2026-09-22T20:45:44.5195250Z 
+2026-09-22T20:45:45.2808349Z 
+2026-09-22T20:45:45.2808944Z > llm-eval-suite@0.1.0 test
+2026-09-22T20:45:45.2809628Z > node --test dist/test
+2026-09-22T20:45:45.2809947Z 
+2026-09-22T20:45:45.3215361Z TAP version 13
+2026-09-22T20:45:45.3432942Z # node:internal/modules/cjs/loader:1433
+2026-09-22T20:45:45.3434307Z #   throw err;
+2026-09-22T20:45:45.3437212Z #   ^
+2026-09-22T20:45:45.3441031Z # Error: Cannot find module '/home/runner/work/llm-eval-suite/llm-eval-suite/dist/test'
+2026-09-22T20:45:45.3442337Z #     at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+2026-09-22T20:45:45.3444699Z #     at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+2026-09-22T20:45:45.3447397Z #     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+2026-09-22T20:45:45.3448911Z #     at Function._load (node:internal/modules/cjs/loader:1216:25)
+2026-09-22T20:45:45.3454271Z #     at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+2026-09-22T20:45:45.3455198Z #     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+2026-09-22T20:45:45.3455775Z #     at node:internal/main/run_main_module:36:49 {
+2026-09-22T20:45:45.3456120Z #   code: 'MODULE_NOT_FOUND',
+2026-09-22T20:45:45.3464051Z #   requireStack: []
+2026-09-22T20:45:45.3464419Z # }
+2026-09-22T20:45:45.3464637Z # Node.js v22.23.2
+2026-09-22T20:45:45.3488136Z # Subtest: dist/test
+2026-09-22T20:45:45.3494860Z not ok 1 - dist/test
+2026-09-22T20:45:45.3495396Z   ---
+2026-09-22T20:45:45.3495805Z   duration_ms: 31.036566
+2026-09-22T20:45:45.3496272Z   type: 'test'
+2026-09-22T20:45:45.3497017Z   location: '/home/runner/work/llm-eval-suite/llm-eval-suite/dist/test:1:1'
+2026-09-22T20:45:45.3497879Z   failureType: 'testCodeFailure'
+2026-09-22T20:45:45.3498438Z   exitCode: 1
+2026-09-22T20:45:45.3498837Z   signal: ~
+2026-09-22T20:45:45.3499274Z   error: 'test failed'
+2026-09-22T20:45:45.3499740Z   code: 'ERR_TEST_FAILURE'
+2026-09-22T20:45:45.3500213Z   ...
+2026-09-22T20:45:45.3500671Z 1..1
+2026-09-22T20:45:45.3501047Z # tests 1
+2026-09-22T20:45:45.3501416Z # suites 0
+2026-09-22T20:45:45.3501780Z # pass 0
+2026-09-22T20:45:45.3502136Z # fail 1
+2026-09-22T20:45:45.3502510Z # cancelled 0
+2026-09-22T20:45:45.3502886Z # skipped 0
+2026-09-22T20:45:45.3503542Z # todo 0
+2026-09-22T20:45:45.3504060Z # duration_ms 39.284332
+2026-09-22T20:45:45.3628569Z ##[error]Process completed with exit code 1.
+2026-09-22T20:45:45.3765610Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-09-22T20:45:45.3766897Z Post job cleanup.
+2026-09-22T20:45:45.4601680Z [command]/usr/bin/git version
+2026-09-22T20:45:45.4646050Z git version 2.55.0
+2026-09-22T20:45:45.4689549Z Temporarily overriding HOME='/home/runner/work/_temp/797486d5-f1ae-48e4-94b8-48eaffaaccb7' before making global git config changes
+2026-09-22T20:45:45.4691271Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-22T20:45:45.4695666Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/llm-eval-suite/llm-eval-suite
+2026-09-22T20:45:45.4732270Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-22T20:45:45.4766246Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-22T20:45:45.5028911Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-22T20:45:45.5056628Z http.https://github.com/.extraheader
+2026-09-22T20:45:45.5068437Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-22T20:45:45.5103630Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-22T20:45:45.5371829Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-22T20:45:45.5408351Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-22T20:45:45.5782812Z Cleaning up orphan processes
+2026-09-22T20:45:45.6095655Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
