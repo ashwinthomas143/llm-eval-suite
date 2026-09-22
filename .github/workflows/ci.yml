@@ -19,4 +19,8 @@ jobs:
 
       - run: npm ci
 
+      - run: npx tsc --listEmittedFiles
+
+      - run: ls -la dist/ dist/src/ dist/test/ 2>&1 || true
+
       - run: npm test
